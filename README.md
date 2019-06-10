@@ -13,4 +13,11 @@ clicar em download e baixar manualmente: lastest snapshot : arquivo: composer.ph
 - Após Executar via terminal o comando "composer install"
 - Se precisar atualizar apenas executar na pasta o "composer update"
 
+- O composer cria seu proprio autoload, então para inserirmos na aplicação devemos fazer o seguinte:
+Colocamos no arquivo index.php a inserção dele: require 'vendor/autoload.php'; para carregar as bibliotecas que o composer instalou
+
+*RESUMO:
+Você altera apenas o arquivo composer.json para incluir mais bibliotecas que for utilizar e install.
+
+
 

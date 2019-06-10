@@ -1,8 +1,11 @@
 <?php
 session_start();
+
 if(!isset($_SESSION['sAtivo'])){
     $_SESSION['sAtivo'] = "nao_liberado";
 }
+
+require 'vendor/autoload.php';
 require 'config.php';
 
 spl_autoload_register(function ($class){
