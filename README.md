@@ -18,6 +18,7 @@ Colocamos no arquivo index.php a inserção dele: require 'vendor/autoload.php';
 
 *RESUMO:
 Você altera apenas o arquivo composer.json para incluir mais bibliotecas que for utilizar e install.
+No site https://packagist.org/explore/ você encontra todas as bibliotecas para uso no seu sistema
 
 
 
