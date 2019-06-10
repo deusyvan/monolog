@@ -8,6 +8,9 @@ clicar em download e baixar manualmente: lastest snapshot : arquivo: composer.ph
 - criar arquivo composer.json
     Diz ao instalador o que vamos instalar no projeto, no caso vamos instalar o monolog
 
-- Na aplicação, vá pelo terminal e acesse a pasta onde está o composer
+- Na aplicação, vá pelo terminal e acesse a pasta onde está o composer, não executar como root
 
-- Após Executar via terminal o comando composer install
+- Após Executar via terminal o comando "composer install"
+- Se precisar atualizar apenas executar na pasta o "composer update"
+
+
