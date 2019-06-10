@@ -1,4 +1,6 @@
 <?php
+use Monolog;
+
 session_start();
 
 if(!isset($_SESSION['sAtivo'])){
@@ -17,6 +19,11 @@ spl_autoload_register(function ($class){
         require 'core/'.$class.'.php';
     }
 });
+    //Vamos instanciar a biblioteca do monolog e a pre-configuração
+    $log = new Monolog\Logger("teste");
+    $log->pushHandler(new Monolog\Handler\StreamHandler('erros.log', Monolog\Logger::WARNING));//Onde vai salvar o log
+
+
     /*Nunca esquecer de ativar o modo de reescrita de URL (mod_rewrite) no Apache URL's amigáveis*/
     $core = new Core();
     $core->run();
