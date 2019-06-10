@@ -23,6 +23,7 @@ spl_autoload_register(function ($class){
     $log = new Monolog\Logger("teste");
     $log->pushHandler(new Monolog\Handler\StreamHandler('erros.log', Monolog\Logger::WARNING));//Onde vai salvar o log
 
+$log->addError("Deu algo errado");
 
     /*Nunca esquecer de ativar o modo de reescrita de URL (mod_rewrite) no Apache URL's amigáveis*/
     $core = new Core();
