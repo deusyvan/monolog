@@ -98,3 +98,21 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2019-06-10 16:32:15
+
+
+
+
+/*consulta para relatorio**/
+SELECT i.id AS codigo
+	, i.data_criacao AS criacao
+	, i.title AS item
+    , u.nome AS nome_cliente
+    , u.dt_cadastro AS data_cadastro_usuario
+    , u.cpf AS identificacao
+    , u.ativo AS status_ativo
+FROM itens i INNER JOIN usuario u ON i.id_usuario = u.id
+WHERE i.data_criacao BETWEEN '2005-01-01' AND '2010-06-10 23:59:59'
+ORDER BY i.data_criacao ASC;
+
+/*Inserção automatica com datas diferentes**/
+UPDATE itens SET data_criacao = FROM_UNIXTIME(ROUND(RAND() * (1473292800 - 145428400)));
