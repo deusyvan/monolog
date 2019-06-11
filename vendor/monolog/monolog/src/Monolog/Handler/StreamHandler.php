@@ -11,8 +11,8 @@
 
 namespace Monolog\Handler;
 
+use Monolog\Formatter\SimpleFormatter;
 use Monolog\Logger;
-use function Monolog\Handler\AbstractHandler\__construct as is_resource;
 
 /**
  * Stores to any stream resource

@@ -13,13 +13,13 @@ declare(strict_types=1);
 
 namespace PHPJasper\Test;
 
+use PHPUnit\Framework\TestCase;
 use PHPJasper\PHPJasper;
-use PHPJasper\Test\PHPJasperTest as TestCase;
 
 /**
  * @author Rafael Queiroz <rafaelfqf@gmail.com>
  */
-class PHPJasperTest extends TestCase
+final class PHPJasperTest extends TestCase
 {
     /**
      * @var
