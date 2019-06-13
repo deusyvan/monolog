@@ -279,7 +279,7 @@
                                             <li><a class="active" href="<?php echo BASE_URL; ?>" style="padding-left: 20px"><span><i class="fa fa-caret-right bigfonts"></i> Mega Sena</span></a></li>
                                         </ul>
                                 </li>
-                                <li><a href="#" style="padding-left: 15px"><i class="fa fa-book bigfonts"></i>Relatórios</a></li>
+                                <li><a href="<?php echo BASE_URL; ?>relatorio" style="padding-left: 15px"><i class="fa fa-book bigfonts"></i>Relatórios</a></li>
                                 <li><a href="#" style="padding-left: 15px"><i class="fa fa-tv bigfonts"></i>Resultados</a></li>
                             </ul>
                     </li>

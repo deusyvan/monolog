@@ -1,5 +1,4 @@
 <?php
-use Monolog;
 
 session_start();
 
@@ -7,7 +6,7 @@ if(!isset($_SESSION['sAtivo'])){
     $_SESSION['sAtivo'] = "nao_liberado";
 }
 
-require 'vendor/autoload.php';
+/* require 'vendor/autoload.php';
 require 'config.php';
 
 spl_autoload_register(function ($class){
@@ -18,12 +17,12 @@ spl_autoload_register(function ($class){
     } else if(file_exists('core/'.$class.'.php')) {
         require 'core/'.$class.'.php';
     }
-});
+}); */
     //Vamos instanciar a biblioteca do monolog e a pre-configuração
-    $log = new Monolog\Logger("teste");
-    $log->pushHandler(new Monolog\Handler\StreamHandler('erros.log', Monolog\Logger::WARNING));//Onde vai salvar o log
+//    $log = new Monolog\Logger("teste");
+//    $log->pushHandler(new Monolog\Handler\StreamHandler('erros.log', Monolog\Logger::WARNING));//Onde vai salvar o log
 
-$log->addError("Deu algo errado");
+//$log->addError("Deu algo errado");
 
     /*Nunca esquecer de ativar o modo de reescrita de URL (mod_rewrite) no Apache URL's amigáveis*/
     $core = new Core();

@@ -1,6 +1,5 @@
 {
 	"require" : {
-		"monolog/monolog" : "^1.24",
-		"geekcom/phpjasper" : "^3.0"
+		"geekcom/phpjasper" : "^3.0.0"
 	}
 }
