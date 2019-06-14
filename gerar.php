@@ -1,17 +1,26 @@
 <?php 
-require_once __DIR__.'/vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 use PHPJasper\PHPJasper;
-$input = __DIR__.'/rel_json.jasper';
-$output= __DIR__.'/';
-$options = ['format'=>['pdf','rtf'],
-            'locale'=>'pt_BR',
-            'db_connection'=>[
-                'driver'=>'json',
-                'data_file'=>BASE_URL.'teste.json',
-            ]
-    
-            ];
 
-$jasper = new PHPJasper();
+$input = __DIR__ .'/relatorio.jasper';
+$output = __DIR__ .'/relatorio';
+$data_file = __DIR__ . '/teste.json';
+//echo $data_file;exit;
+$options = [
+    'format' => ['pdf'],
+    'params' => [],
+    'locale' => 'pt_BR',
+    'db_connection' => [
+        'driver' => 'json',
+        'data_file' => $data_file,
+        'json_query' => 'data'
+    ]
+];
 
-$jasper->process($input, $output,$options)->execute();
+$jasper = new PHPJasper;
+
+$jasper->process(
+    $input,
+    $output,
+    $options
+    )->execute();

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a655fe4f-0082-4ccf-b9d6-9f14bca07048">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="driveJson"/>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="codigo" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="codigo"/>
+		<fieldDescription><![CDATA[codigo]]></fieldDescription>
+	</field>
+	<field name="criacao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="criacao"/>
+		<fieldDescription><![CDATA[criacao]]></fieldDescription>
+	</field>
+	<field name="item" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="item"/>
+		<fieldDescription><![CDATA[item]]></fieldDescription>
+	</field>
+	<field name="nome_cliente" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nome_cliente"/>
+		<fieldDescription><![CDATA[nome_cliente]]></fieldDescription>
+	</field>
+	<field name="data_cadastro_usuario" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data_cadastro_usuario"/>
+		<fieldDescription><![CDATA[data_cadastro_usuario]]></fieldDescription>
+	</field>
+	<field name="identificacao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="identificacao"/>
+		<fieldDescription><![CDATA[identificacao]]></fieldDescription>
+	</field>
+	<field name="status_ativo" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="status_ativo"/>
+		<fieldDescription><![CDATA[status_ativo]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="230" y="10" width="100" height="19" uuid="d711364f-acb7-49b1-8949-72947eb30353"/>
+				<textFieldExpression><![CDATA["Relátorio"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="18" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="18" y="0" width="100" height="30" uuid="af628ad7-7c1c-4b1e-a468-f5363a3a363d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe5ca8c8-8792-47c6-b036-a301d9594422"/>
+				</reportElement>
+				<text><![CDATA[codigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="0" width="177" height="30" uuid="634a8d75-77f4-4535-b8de-a32e5adf848a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5ba24ff-5848-4bdc-bfc7-3dd6b48696f0"/>
+				</reportElement>
+				<text><![CDATA[item]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="15" y="0" width="100" height="20" uuid="bb0b7991-08c7-4fca-a15f-a73ee7be421c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe5ca8c8-8792-47c6-b036-a301d9594422"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="177" height="20" uuid="bcf14aaf-5376-4a0d-a173-439738fbc680">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5ba24ff-5848-4bdc-bfc7-3dd6b48696f0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
