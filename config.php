@@ -3,7 +3,6 @@ require 'environment.php';
 
 global $config;
 global $db;
-
 $config = array();
 
 if(ENVIRONMENT == 'development'){

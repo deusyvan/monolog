@@ -1,9 +1,10 @@
 <?php
-class homeController extends controller{
+class gerarController extends controller {
+
 /*     public function __construct() {
         parent::__construct();
     } */
-    
+
     public function index() {
         $dados = array();
         
@@ -12,13 +13,11 @@ class homeController extends controller{
             || $_SESSION['sAtivo'] == "nao_liberado"
             || $_SESSION['sAtivo'] == 'lock'
             || isset($_SESSION['obriga_troca_senha'])){
-            $this->loadTemplate('login', $dados);
-            exit;
+                $this->loadTemplate('login', $dados);
+                exit;
         }
         
-        $u = new Usuarios();
-       
-        $this->loadTemplate('home', $dados);
+        $this->loadTemplate('relatorio', $dados);
     }
-    
+
 }

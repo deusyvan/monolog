@@ -24,3 +24,5 @@ $jasper->process(
     $output,
     $options
     )->execute();
+
+    header('Location: /monolog/');
