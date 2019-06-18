@@ -4,7 +4,7 @@ use PHPJasper\PHPJasper;
 
 $input = __DIR__ .'/relatorio.jasper';
 $output = __DIR__ .'/relatorio';
-$data_file = __DIR__ . '/teste.json';
+$data_file = __DIR__ . '/resultado.json';
 //echo $data_file;exit;
 $options = [
     'format' => ['pdf'],
@@ -25,4 +25,4 @@ $jasper->process(
     $options
     )->execute();
 
-    header('Location: /monolog/');
+    header('Location: /monolog/relatorio/relatorio.pdf');

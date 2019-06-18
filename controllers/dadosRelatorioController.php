@@ -15,9 +15,17 @@ class dadosRelatorioController extends controller {
             $data_inicio = addslashes($_POST['inicio']);
             $data_fim = addslashes($_POST['fim']);
             $data_file = dadosRelatorioController::buscarDados($data_inicio, $data_fim);
-            $dados['arquivo'] = $data_file;
+            
+            $name = 'resultado.json';
+            $text = $data_file;
+            $file = fopen($name, 'w+');
+            fwrite($file, $text);
+            fclose($file);
+            
+            //file_put_contents(BASE_URL.'relatorio/resultado.json', $data_file);
+            //$dados['arquivo'] = $data_file;
         }
-            $this->loadTemplate('gerando', $dados);
+        header('Location: /monolog/gerando.php');
     }
     
     public function buscarDados($data_inicio,$data_fim) {
@@ -27,3 +35,4 @@ class dadosRelatorioController extends controller {
         return json_encode($relatorio2);
     }
 }
+
