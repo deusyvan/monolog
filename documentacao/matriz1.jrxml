@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="matriz1" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9eda37df-c168-4074-b538-aa8535238445">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Adaptador novo"/>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="id_mtz_achados" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="id_mtz_achados"/>
+		<fieldDescription><![CDATA[id_mtz_achados]]></fieldDescription>
+	</field>
+	<field name="id_aud_questao_vinc" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="id_aud_questao_vinc"/>
+		<fieldDescription><![CDATA[id_aud_questao_vinc]]></fieldDescription>
+	</field>
+	<field name="situacao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="situacao"/>
+		<fieldDescription><![CDATA[situacao]]></fieldDescription>
+	</field>
+	<field name="criterio" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="criterio"/>
+		<fieldDescription><![CDATA[criterio]]></fieldDescription>
+	</field>
+	<field name="evidencia" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="evidencia"/>
+		<fieldDescription><![CDATA[evidencia]]></fieldDescription>
+	</field>
+	<field name="causa" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="causa"/>
+		<fieldDescription><![CDATA[causa]]></fieldDescription>
+	</field>
+	<field name="efeito" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="efeito"/>
+		<fieldDescription><![CDATA[efeito]]></fieldDescription>
+	</field>
+	<field name="boas_praticas" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="boas_praticas"/>
+		<fieldDescription><![CDATA[boas_praticas]]></fieldDescription>
+	</field>
+	<field name="recomendacao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="recomendacao"/>
+		<fieldDescription><![CDATA[recomendacao]]></fieldDescription>
+	</field>
+	<field name="beneficio" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="beneficio"/>
+		<fieldDescription><![CDATA[beneficio]]></fieldDescription>
+	</field>
+	<field name="user_cad" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="user_cad"/>
+		<fieldDescription><![CDATA[user_cad]]></fieldDescription>
+	</field>
+	<field name="codom_cad" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="codom_cad"/>
+		<fieldDescription><![CDATA[codom_cad]]></fieldDescription>
+	</field>
+	<field name="data_cad" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data_cad"/>
+		<fieldDescription><![CDATA[data_cad]]></fieldDescription>
+	</field>
+	<field name="liberacao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="liberacao"/>
+		<fieldDescription><![CDATA[liberacao]]></fieldDescription>
+	</field>
+	<field name="user_lib" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="user_lib"/>
+		<fieldDescription><![CDATA[user_lib]]></fieldDescription>
+	</field>
+	<field name="data_lib" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data_lib"/>
+		<fieldDescription><![CDATA[data_lib]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="status"/>
+		<fieldDescription><![CDATA[status]]></fieldDescription>
+	</field>
+	<field name="id_auditoria" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="id_auditoria"/>
+		<fieldDescription><![CDATA[id_auditoria]]></fieldDescription>
+	</field>
+	<field name="unidades" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="unidades"/>
+		<fieldDescription><![CDATA[unidades]]></fieldDescription>
+	</field>
+	<field name="tipo_auditoria" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="tipo_auditoria"/>
+		<fieldDescription><![CDATA[tipo_auditoria]]></fieldDescription>
+	</field>
+	<field name="nup" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nup"/>
+		<fieldDescription><![CDATA[nup]]></fieldDescription>
+	</field>
+	<field name="periodo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="periodo"/>
+		<fieldDescription><![CDATA[periodo]]></fieldDescription>
+	</field>
+	<field name="nm_area" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nm_area"/>
+		<fieldDescription><![CDATA[nm_area]]></fieldDescription>
+	</field>
+	<field name="nm_subarea" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nm_subarea"/>
+		<fieldDescription><![CDATA[nm_subarea]]></fieldDescription>
+	</field>
+	<field name="id_subarea" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="id_subarea"/>
+		<fieldDescription><![CDATA[id_subarea]]></fieldDescription>
+	</field>
+	<field name="objetivo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="objetivo"/>
+		<fieldDescription><![CDATA[objetivo]]></fieldDescription>
+	</field>
+	<field name="responsaveis" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="responsaveis"/>
+		<fieldDescription><![CDATA[responsaveis]]></fieldDescription>
+	</field>
+	<field name="problema" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="problema"/>
+		<fieldDescription><![CDATA[problema]]></fieldDescription>
+	</field>
+	<field name="nm_questao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nm_questao"/>
+		<fieldDescription><![CDATA[nm_questao]]></fieldDescription>
+	</field>
+	<field name="id_questao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="id_questao"/>
+		<fieldDescription><![CDATA[id_questao]]></fieldDescription>
+	</field>
+	<group name="id_questao">
+		<groupExpression><![CDATA[$F{id_questao}]]></groupExpression>
+	</group>
+	<group name="nm_area">
+		<groupExpression><![CDATA[$F{nm_area}]]></groupExpression>
+	</group>
+	<group name="nm_subarea">
+		<groupExpression><![CDATA[$F{nm_subarea}]]></groupExpression>
+	</group>
+	<group name="nm_questao">
+		<groupExpression><![CDATA[$F{nm_questao}]]></groupExpression>
+	</group>
+	<group name="GroupArea">
+		<groupExpression><![CDATA[$F{nm_area}]]></groupExpression>
+		<groupHeader>
+			<band height="43">
+				<textField>
+					<reportElement x="120" y="6" width="379" height="30" uuid="40cbccf7-cfc6-4492-aea1-64cae442237d"/>
+					<textFieldExpression><![CDATA[$F{nm_area}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="6" width="100" height="30" uuid="51ce1aea-51b7-4a32-9292-6fc6451a9e4c"/>
+					<text><![CDATA[Área]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="GroupSubarea">
+		<groupExpression><![CDATA[$F{nm_subarea}]]></groupExpression>
+		<groupHeader>
+			<band height="38">
+				<textField>
+					<reportElement x="120" y="4" width="531" height="30" uuid="d3fdea32-4ffe-4be1-923a-21b083a8f783"/>
+					<textFieldExpression><![CDATA[$F{nm_subarea}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="4" width="100" height="30" uuid="ae38ed57-50db-45b3-88e9-90f387080deb"/>
+					<text><![CDATA[Subarea]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="GroupQuestao">
+		<groupExpression><![CDATA[$F{nm_questao}]]></groupExpression>
+		<groupHeader>
+			<band height="37">
+				<textField>
+					<reportElement x="120" y="4" width="683" height="30" uuid="df212b2a-ee5b-45f8-bb3c-52b8894b3aeb"/>
+					<textFieldExpression><![CDATA[$F{nm_questao}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="2" width="100" height="30" uuid="4b25b224-f266-4ede-925e-d23bb8086dd2"/>
+					<text><![CDATA[Questão]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="280" y="10" width="185" height="30" uuid="66d96215-5e9d-43e8-ac57-0bdfd893e500"/>
+				<textFieldExpression><![CDATA["Matriz de achados"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="29" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="17" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="75" splitType="Stretch">
+			<textField evaluationTime="Auto">
+				<reportElement x="260" y="24" width="267" height="30" uuid="d2bfe115-b9ad-4e35-aa6a-1cb65972c96c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f24c8e7e-a637-420d-b6e7-e5feaeccae84"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<paragraph lineSpacing="Proportional"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{criterio}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto">
+				<reportElement x="527" y="24" width="267" height="30" uuid="efadf082-ae06-4595-92e0-4d185281a0cc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5f875b1-df10-4008-892e-ab3f6ab57d73"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<paragraph lineSpacing="Proportional"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{evidencia}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto">
+				<reportElement stretchType="ContainerBottom" x="-8" y="24" width="268" height="30" uuid="20951e24-e0bd-4b80-b65c-c95a6074ab68">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cdacd51a-da10-47b0-9481-c28e37df9f07"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<paragraph lineSpacing="Proportional"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{situacao}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="125" height="24" uuid="19621cdd-fec5-4183-9b48-9244adb8c9c8"/>
+				<text><![CDATA[Achados:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="13" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="19" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="13" splitType="Stretch"/>
+	</summary>
+</jasperReport>

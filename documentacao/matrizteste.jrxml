@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="matrizteste" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="99ea2ea5-0717-407a-b95d-25d823cc2b4c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Adaptador novo"/>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="situacao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="situacao"/>
+		<fieldDescription><![CDATA[situacao]]></fieldDescription>
+	</field>
+	<field name="criterio" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="criterio"/>
+		<fieldDescription><![CDATA[criterio]]></fieldDescription>
+	</field>
+	<field name="evidencia" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="evidencia"/>
+		<fieldDescription><![CDATA[evidencia]]></fieldDescription>
+	</field>
+	<field name="causa" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="causa"/>
+		<fieldDescription><![CDATA[causa]]></fieldDescription>
+	</field>
+	<field name="efeito" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="efeito"/>
+		<fieldDescription><![CDATA[efeito]]></fieldDescription>
+	</field>
+	<field name="boas_praticas" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="boas_praticas"/>
+		<fieldDescription><![CDATA[boas_praticas]]></fieldDescription>
+	</field>
+	<field name="recomendacao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="recomendacao"/>
+		<fieldDescription><![CDATA[recomendacao]]></fieldDescription>
+	</field>
+	<field name="beneficio" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="beneficio"/>
+		<fieldDescription><![CDATA[beneficio]]></fieldDescription>
+	</field>
+	<field name="liberacao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="liberacao"/>
+		<fieldDescription><![CDATA[liberacao]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="status"/>
+		<fieldDescription><![CDATA[status]]></fieldDescription>
+	</field>
+	<field name="unidades" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="unidades"/>
+		<fieldDescription><![CDATA[unidades]]></fieldDescription>
+	</field>
+	<field name="tipo_auditoria" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="tipo_auditoria"/>
+		<fieldDescription><![CDATA[tipo_auditoria]]></fieldDescription>
+	</field>
+	<field name="nup" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nup"/>
+		<fieldDescription><![CDATA[nup]]></fieldDescription>
+	</field>
+	<field name="periodo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="periodo"/>
+		<fieldDescription><![CDATA[periodo]]></fieldDescription>
+	</field>
+	<field name="nm_area" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nm_area"/>
+		<fieldDescription><![CDATA[nm_area]]></fieldDescription>
+	</field>
+	<field name="nm_subarea" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nm_subarea"/>
+		<fieldDescription><![CDATA[nm_subarea]]></fieldDescription>
+	</field>
+	<field name="objetivo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="objetivo"/>
+		<fieldDescription><![CDATA[objetivo]]></fieldDescription>
+	</field>
+	<field name="responsaveis" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="responsaveis"/>
+		<fieldDescription><![CDATA[responsaveis]]></fieldDescription>
+	</field>
+	<field name="problema" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="problema"/>
+		<fieldDescription><![CDATA[problema]]></fieldDescription>
+	</field>
+	<field name="nm_questao" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nm_questao"/>
+		<fieldDescription><![CDATA[nm_questao]]></fieldDescription>
+	</field>
+	<group name="nm_area">
+		<groupExpression><![CDATA[$F{nm_area}]]></groupExpression>
+	</group>
+	<group name="nm_subarea">
+		<groupExpression><![CDATA[$F{nm_subarea}]]></groupExpression>
+	</group>
+	<group name="nm_questao">
+		<groupExpression><![CDATA[$F{nm_questao}]]></groupExpression>
+	</group>
+	<group name="GroupoArea">
+		<groupExpression><![CDATA[$F{nm_area}]]></groupExpression>
+		<groupHeader>
+			<band height="29">
+				<textField>
+					<reportElement x="210" y="6" width="590" height="18" uuid="0ea71ff7-51c2-48ba-aaaf-cc34c21656f4"/>
+					<textFieldExpression><![CDATA[$F{nm_area}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="80" y="6" width="100" height="20" uuid="8ceb7580-7906-4e20-bcaa-f9727bd9f217"/>
+					<text><![CDATA["Área"]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="GroupSubarea">
+		<groupExpression><![CDATA[$F{nm_subarea}]]></groupExpression>
+		<groupHeader>
+			<band height="24">
+				<textField>
+					<reportElement x="211" y="1" width="469" height="20" uuid="6947079a-c7a9-4232-b73d-1430b46a5fca"/>
+					<textFieldExpression><![CDATA[$F{nm_subarea}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="80" y="2" width="100" height="20" uuid="fdd90720-6612-46a8-959d-644a9e8ba9e5"/>
+					<text><![CDATA["Subarea"]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="GroupQuestao">
+		<groupExpression><![CDATA[$F{nm_questao}]]></groupExpression>
+		<groupHeader>
+			<band height="25">
+				<textField>
+					<reportElement x="211" y="2" width="469" height="20" uuid="b73c3529-c423-49af-a502-0c3cb0c0ee48"/>
+					<textFieldExpression><![CDATA[$F{nm_questao}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="80" y="2" width="100" height="20" uuid="4d233d12-f2c0-4258-980e-515fd9a703d1"/>
+					<textFieldExpression><![CDATA["Questão"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50">
+				<textField>
+					<reportElement x="700" y="10" width="100" height="30" uuid="0028e225-d161-4fa5-875d-5e9724828c09"/>
+					<textFieldExpression><![CDATA[$V{GroupQuestao_COUNT}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="590" y="10" width="100" height="30" uuid="8070dc98-c34c-4d4e-a89d-f2756a151d48"/>
+					<text><![CDATA[Total de Achados]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="316" y="0" width="171" height="20" uuid="32a5d657-d746-4017-b90a-fd77e94a0258"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[MATRIZ DE ACHADOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="144" y="6" width="100" height="30" uuid="97c34e51-1ac4-41e3-b393-3fdb614549b6"/>
+				<textFieldExpression><![CDATA[$F{tipo_auditoria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="119" splitType="Stretch">
+			<textField>
+				<reportElement x="-4" y="10" width="100" height="102" uuid="2eeeb7c5-5b93-4655-afe9-e49878f5847c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59fa69a7-458b-4fc4-a93a-fbe1ff17112c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{situacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="10" width="100" height="102" uuid="3671b7e1-691b-4cdd-9be1-cafc5262fc3c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ac603e17-f83c-44e1-965b-e240ddf8ccd9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{criterio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="10" width="100" height="102" uuid="f9b5bdc6-bd29-4acf-a040-5db97ab6dfc2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb9a5ad3-f8fb-4b6f-8782-c570c9d0f4d4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{evidencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="312" y="8" width="100" height="102" uuid="4907ab9e-2cc6-42cd-839e-0325d74d9596">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9540bb31-7725-43d2-b611-88dfb7333996"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{causa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="8" width="100" height="102" uuid="ff397de7-ae18-4354-a640-0055a2af4c6b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3bd61c87-3e49-49b1-86ae-546e5cb5f5d8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{efeito}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="516" y="7" width="100" height="102" uuid="456efeab-9a80-437a-904e-ceef0420f1bf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a3ad3e6-2e9b-4479-be21-1e7d466396f4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{boas_praticas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="616" y="7" width="100" height="102" uuid="b001a102-c672-4c5e-a8bb-b787559d0900">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e9047eb0-253e-4182-91b6-3b19a9ea4847"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{recomendacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="718" y="3" width="100" height="102" uuid="c8bd6b63-354b-4830-8b8a-d5ed745cddeb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49fbb5f4-b75d-44e1-8b00-b6fbf89cdeb0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{beneficio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="12" width="100" height="18" uuid="d2cd839a-ecce-4b95-9b90-9e9c3bd945d3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59fa69a7-458b-4fc4-a93a-fbe1ff17112c"/>
+				</reportElement>
+				<text><![CDATA[situacao]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="12" width="100" height="18" uuid="a2f9da4a-2943-4b50-bf58-5a798195a759">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ac603e17-f83c-44e1-965b-e240ddf8ccd9"/>
+				</reportElement>
+				<text><![CDATA[criterio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="12" width="100" height="23" uuid="ccfa0d97-a53f-450c-93c6-573d8a44af9f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb9a5ad3-f8fb-4b6f-8782-c570c9d0f4d4"/>
+				</reportElement>
+				<text><![CDATA[evidencia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="8" width="100" height="30" uuid="a2e4efe8-4f55-499e-b1f8-97061ecaf253">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9540bb31-7725-43d2-b611-88dfb7333996"/>
+				</reportElement>
+				<text><![CDATA[causa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="8" width="100" height="30" uuid="8d96fa1f-3bb4-4932-905e-d7a8fdf64952">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3bd61c87-3e49-49b1-86ae-546e5cb5f5d8"/>
+				</reportElement>
+				<text><![CDATA[efeito]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="526" y="8" width="100" height="30" uuid="5d2d3343-f59a-4ec4-a22a-f237c5876a5e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a3ad3e6-2e9b-4479-be21-1e7d466396f4"/>
+				</reportElement>
+				<text><![CDATA[boas_praticas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="626" y="8" width="100" height="30" uuid="f62526ab-f39a-4877-9882-0f94b084c445">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e9047eb0-253e-4182-91b6-3b19a9ea4847"/>
+				</reportElement>
+				<text><![CDATA[recomendacao]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="728" y="8" width="100" height="30" uuid="399de3ab-505e-4250-9e13-16d8e1c2fa21">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49fbb5f4-b75d-44e1-8b00-b6fbf89cdeb0"/>
+				</reportElement>
+				<text><![CDATA[beneficio]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
